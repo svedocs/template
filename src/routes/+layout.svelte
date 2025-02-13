@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { Navigation } from '$lib/internal/index.js';
+	import Navigation from '$lib/components/navigation.svelte';
 	import '@unocss/reset/tailwind.css';
 	import 'virtual:uno.css';
 </script>
@@ -20,11 +20,26 @@
 					]
 				}
 			]
+		},
+		{
+			text: 'Examples',
+			headers: [
+				{
+					header: 'API',
+					base: '/examples',
+					links: [
+						{
+							text: 'Introduction',
+							href: '/introduction'
+						}
+					]
+				}
+			]
 		}
 	]}
 >
 	{#snippet logo()}
-		<a href="/">svedocs</a>
+		<a class="text-lg" href="/">svedocs</a>
 	{/snippet}
 </Navigation>
 

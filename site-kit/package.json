@@ -1,0 +1,15 @@
+{
+	"packageManager": "pnpm@9.3.0",
+	"engines": {
+		"node": ">=18",
+		"pnpm": ">=9.2.0"
+	},
+	"scripts": {
+		"changeset": "changeset",
+		"ci:release": "pnpm -r package && changeset publish",
+		"ci:version": "changeset version"
+	},
+	"devDependencies": {
+		"@changesets/cli": "^2.27.1"
+	}
+}
